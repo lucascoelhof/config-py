@@ -1,0 +1,12 @@
+app_name: "test"
+a_list:
+- element_1: I am the first element
+- element_2: 2
+- element_3: I am a dict
+  subelement_1: 1
+  subelement_2: Second element
+  subelement_3: 3.14
+
+another:
+  nested:
+    element: Oh, you found me!
