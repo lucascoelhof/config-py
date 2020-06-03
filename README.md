@@ -7,14 +7,15 @@ Python package to deal with configuration files in YAML
 from configpy import Config
 
 # Assumes you have a file called config.yaml
-# But you can also pass the path of other yaml file
 config = Config()
+# But you can also pass the path of other yaml file
 other_config = Config("other_config.yaml")
 
 # Parameters can be accessed in three different ways:
 print(config.a)
 print(config["a"])
 print(config.get("a"))
+# If the parameter does not exist, AttributeError will be raised
 
 # Parameters can be set in three different ways:
 config.a = "b"
