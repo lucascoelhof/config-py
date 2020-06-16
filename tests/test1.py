@@ -1,7 +1,7 @@
 import os
 import unittest
 
-from configpy import Config
+from confyaml import Config
 
 
 class SanityTest(unittest.TestCase):

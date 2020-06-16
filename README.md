@@ -1,10 +1,10 @@
-# config-py
+# confyaml
 Python package to deal with configuration files in YAML
 
 # Usage
 
 ```python
-from configpy import Config
+from confyaml import Config
 
 # Assumes you have a file called config.yaml
 config = Config()
