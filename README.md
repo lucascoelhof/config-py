@@ -39,5 +39,6 @@ Unittests available on the "test" folder. You can run them using this:
 # References
 [This Stack Overflow answer](https://stackoverflow.com/a/60227528/3363527) helped me to figure
 out how to transform the YAML file into a object accessible with dot (.) operator
+
 [This blog post](http://byatool.com/uncategorized/simple-property-merge-for-python-objects/) helped me on merging the yaml file
 with the Config object

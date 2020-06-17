@@ -1,1 +1,1 @@
-from confyaml import Config
+from confyaml.confyaml import Config

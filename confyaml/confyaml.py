@@ -59,7 +59,7 @@ class Config(object):
             with open(filepath, "r") as stream:
                 self.__merge_object(data_to_object(yaml.safe_load(stream)))
         else:
-            raise IOError("Config file not found on path " + filepath)
+            raise IOError("Config file not found on path " + os.path.abspath(filepath))
 
     def get(self, param_name):
         """

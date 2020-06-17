@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 setup(
     name='confyaml',
     packages=['confyaml'],
-    version='0.1.2',
+    version='0.1.3',
     license='MIT',
     description='Deals with configuration files in yaml',
     long_description=long_description,
@@ -17,6 +17,7 @@ setup(
     download_url='https://github.com/lucascoelhof/confyaml/archive/v0.1.2-beta.tar.gz',
     keywords=['configuration', 'yaml', 'config'],
     install_requires=[
+        "pyyaml"
     ],
     classifiers=[
         'Development Status :: 3 - Alpha',

@@ -6,6 +6,9 @@ from confyaml import Config
 
 class SanityTest(unittest.TestCase):
 
+    def setUp(self) -> None:
+        os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
     def test_app_name(self):
         config = Config()
         self.assertEqual(config.app_name, "test")
@@ -55,6 +58,9 @@ class SanityTest(unittest.TestCase):
 
 
 class GetSetSaveTest(unittest.TestCase):
+
+    def setUp(self) -> None:
+        os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
     def test_get(self):
         config = Config()
