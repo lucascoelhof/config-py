@@ -2,3 +2,7 @@
 .idea/
 
 *.pyc
+
+confyaml.egg-info/
+
+dist/
