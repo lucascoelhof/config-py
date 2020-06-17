@@ -29,11 +29,11 @@ class DataObject:
         raise AttributeError("No attribute named {} found".format(item))
 
 
-def data_to_object(data: Union[Mapping[str, Any], Iterable]) -> object:
+def data_to_object(data: Union[Mapping[str, Any], Iterable]) -> Any:
     """
     Gets a generic list/dict type and transtaforms into a object
     Returns:
-        object: the converted object
+        Any: the converted object
     """
     if isinstance(data, abc.Mapping):
         r = DataObject()
@@ -67,7 +67,7 @@ class Config(object):
         Args:
             param_name (str): Desired parameter
         Returns:
-            object: Value if found
+            Any: Value if found
         Raises:
             AttributeError: if parameter not found
         """
@@ -102,7 +102,7 @@ class Config(object):
         Args:
             item (str): parameter name
         Returns:
-            object: whatever the parameter is holding
+            Any: whatever the parameter is holding
         Raises:
             AttributeError: If item does not exist
         """
