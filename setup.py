@@ -14,7 +14,7 @@ setup(
     author='Lucas Coelho',
     author_email='hello@lucascoelho.net',
     url='https://github.com/lucascoelhof/confyaml',
-    download_url='https://github.com/lucascoelhof/confyaml/archive/v0.1.2-beta.tar.gz',
+    download_url='https://github.com/lucascoelhof/confyaml/archive/v0.1.3-beta.tar.gz',
     keywords=['configuration', 'yaml', 'config'],
     install_requires=[
         "pyyaml"
