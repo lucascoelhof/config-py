@@ -20,7 +20,7 @@ class DataObject:
         Args:
             item (str): parameter name
         Returns:
-            object: whatever the parameter is holding
+            typing.Any: whatever the parameter is holding
         Raises:
             AttributeError: if the item does not exist
         """
@@ -33,7 +33,7 @@ def data_to_object(data: Union[Mapping[str, Any], Iterable]) -> object:
     """
     Gets a generic list/dict type and transtaforms into a object
     Returns:
-        object: the converted object
+        typing.Any: the converted object
     """
     if isinstance(data, abc.Mapping):
         r = DataObject()
@@ -67,7 +67,7 @@ class Config(object):
         Args:
             param_name (str): Desired parameter
         Returns:
-            object: Value if found
+            typing.Any: Value if found
         Raises:
             AttributeError: if parameter not found
         """
@@ -102,7 +102,7 @@ class Config(object):
         Args:
             item (str): parameter name
         Returns:
-            object: whatever the parameter is holding
+            typing.Any: whatever the parameter is holding
         Raises:
             AttributeError: If item does not exist
         """
@@ -115,7 +115,7 @@ class Config(object):
         Overloads the []  operator for set operation
         Args:
             key (str): param name
-            value (object): param value
+            value (typing.Any): param value
         """
         setattr(self, key, value)
 
@@ -123,7 +123,7 @@ class Config(object):
         """
         Used to copy properties from one object to another if there isn't a naming conflict;
         Args:
-            obj (object): object to be merged
+            obj (typing.Any): object to be merged
         """
         for item in obj.__dict__:
             # Check to make sure it can't be called... ie a method.
